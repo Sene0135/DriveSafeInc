@@ -1,0 +1,154 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
+    <link rel="stylesheet" href="font-awesome.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    <script src="myScript.js"></script>
+  </head>
+  <body>
+    <main>
+    <nav class="navbar fixed-top">
+        <div class="container">
+		    <a class="navbar-brand active text-white" href="index.html" id="title" > Drive Safe Inc <img src="logo.svg" height="28" id="Logo"> </a>
+		    <a class="text-white nav-item nav-link" href=#overviewSec> Overview </a>
+        <a class="text-white nav-item nav-link" href=#calendarSec> Calendar </a>
+		    <a class="text-white nav-item nav-link" href=#assignmentSec> Driver Assignments </a>
+        </div>
+    </nav>
+    <div id= "trans">
+        <!-- <h2 id="head"> Schedule and Calendar</h2> -->
+        <div id="overviewSec">
+          <div class="d-flex justify-content-center flexcontainer align-items-center">
+            <img id = "MI" class="img-responsive rounded pic" src="mainpic.jpg" height="450">
+            <p class = "text-box maintb"> 
+              Overview: <br>Here at Drive Safe Inc. we try to provide the safest and most capable instructors in the business! Whether you are a new driver or have years of experience behind the wheel, we offer a range of services and programs to help you improve your driving skills and stay safe on the road. With Drive Safe, you can trust that you are in good hands.<br>
+              <br> Learn about our current drivers!<br>
+              Abraham: Experienced driver with a spacious Mitsubishi Outlander available for driving lessons.<br>
+              Kourteny: Enthusiastic driver with a high-performance Toyota Supra available for driving lessons.<br>
+              Janice: Professional driving instructor with a reliable Honda Civic available for driving lessons.<br>
+            </p>
+        </div>
+        </div>
+        <div id="calendarSec">
+            <div class=" container">
+              <h2> Schedule and Calendar</h2>
+                <script src="https://cdn.jsdelivr.net/npm/@fullcalendar/core@4.2.0/main.min.js"></script>
+                <script src="https://cdn.jsdelivr.net/npm/@fullcalendar/daygrid@4.2.0/main.js"></script>
+                <script src="https://cdn.jsdelivr.net/npm/@fullcalendar/interaction@4.2.0/main.js"></script>
+                 <link href="https://cdn.jsdelivr.net/npm/@fullcalendar/core@4.2.0/main.min.css" rel="stylesheet"/>
+                <div id="calendar"></div>
+                <div class="popup">
+                  <span class="popuptext" id="myPopup">A Simple Popup!</span>
+                </div>
+                </div>
+            </div>
+            <div class="container2">
+            <div id="assignmentSec">
+              <div class="container">
+                <h2> Driver Assignments and Students</h2>
+                <table class="table table-dark table-hover table-bordered" >
+                  <thead>
+                    <tr class="text-light">
+                      <th scope="col">Client</th>
+                      <th scope="col">Driving Instructor</th>
+                      <th scope="col">Car</th>
+                      <th scope="col">Date</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="text-light">
+                      <td>Dallas</td>
+                      <td>Abraham</td>
+                      <td class="table-warning text-dark">Mitsubishi Outlander</td>
+                      <td>05-12-23</td>
+                    </tr>
+                    <tr class="text-light">
+                      <td>Khris</td>
+                      <td>Kourteny</td>
+                      <td class="table-danger text-dark">Toyota Supra</td>
+                      <td>05-13-23</td>
+                    </tr>
+                    <tr class="text-light">
+                      <td> Larry</td>
+                      <td>Janice</td>
+                      <td >Honda Civic</td>
+                      <td>05-14-23</td>
+                    </tr>
+                    <tr class="text-light" onclick="openForm()">
+                      <td><button class="open-button" onclick="openForm()"></button></td>
+                      <td><button class="open-button" onclick="openForm()"></button></td>
+                      <td> <button class="open-button" onclick="openForm()"></button></td>
+                      <td> <button class="open-button" onclick="openForm()"></button></td>
+                      </tr>
+                      <tr class="text-light" onclick="openForm()">
+                        <td><button class="open-button" onclick="openForm()"></button></td>
+                        <td><button class="open-button" onclick="openForm()"></button></td>
+                        <td> <button class="open-button" onclick="openForm()"></button></td>
+                        <td> <button class="open-button" onclick="openForm()"></button></td>
+                        </tr>
+                        <tr class="text-light" onclick="openForm()">
+                          <td><button class="open-button" onclick="openForm()"></button></td>
+                          <td><button class="open-button" onclick="openForm()"></button></td>
+                          <td> <button class="open-button" onclick="openForm()"></button></td>
+                          <td> <button class="open-button" onclick="openForm()"></button></td>
+                          </tr>
+                          <tr class="text-light">
+                            <td>Garrett</td>
+                            <td>Janice</td>
+                            <td >Honda Civic</td>
+                            <td>05-25-23</td>
+                          </tr>
+                            <tr class="text-light" onclick="openForm()">
+                              <td><button class="open-button" onclick="openForm()"></button></td>
+                              <td><button class="open-button" onclick="openForm()"></button></td>
+                              <td> <button class="open-button" onclick="openForm()"></button></td>
+                              <td> <button class="open-button" onclick="openForm()"></button></td>
+                              </tr>
+                              <tr class="text-light" onclick="openForm()">
+                                <td><button class="open-button" onclick="openForm()"></button></td>
+                                <td><button class="open-button" onclick="openForm()"></button></td>
+                                <td> <button class="open-button" onclick="openForm()"></button></td>
+                                <td> <button class="open-button" onclick="openForm()"></button></td>
+                                </tr>
+                  </tbody>
+                </table>
+                </div>
+                <div class="form-popup" id="myForm">
+                  <form class="form-container">
+                    <h4>Add </h4>
+                
+                    <label for="drivername"><b>Instructor Name</b></label>
+                    <input type="text" placeholder="Enter Driver" name="drivername" required><br>
+                
+                    <label for="CarID"><b>Car ID</b></label><br>
+                    <input type="text" placeholder="Enter Car ID" name="CarID" required>
+
+                    <label for="clientname"><b>Student Name</b></label>
+                    <input type="text" placeholder="Enter Client" name="clientname" required> <br>
+
+                    <label for="comments"><b>Comments</b></label><br>
+                    <input type="text" placeholder="Comments" name="comment"><br><br>
+                
+                    <button type="submit" class="btn">Submit</button>
+                    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                  </form>
+                </div>
+          </div>
+    </div> 
+    </div>
+    <div class="botnavbar">
+      <!-- <p>Contact Information:</p>> -->
+      <a href="https://www.google.com/gmail/"><img src ="email.png"  id="email"></a>
+      <a href="https://www.snapchat.com/en-US"><img src ="snapchat.svg"  id="snapchat"></a>
+      <a href="https://twitter.com/"target="_Blank"><img src ="twitter.svg"  id="twitter"></a>
+      <a href="https://www.instagram.com/"><img src ="instagram.svg"  id="instagram"></a>
+      <p>Call us at 123-456-1578        Drive Safe Inc © 2023</p>
+    </div>
+    </main>       
+    </body>
+    </html>
